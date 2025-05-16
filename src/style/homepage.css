@@ -1,0 +1,161 @@
+.homepage{
+    background-image: url(../assests/Scenes.jpg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    height: 100vh;
+}
+
+.multiple-images {
+    background-color: rgb(33, 37, 41);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* المسافة بين الصفوف */
+    
+  }
+  
+  .image-containers {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* المسافة بين الصور */
+  }
+  .image-box{  
+    width: 400px;
+    position: relative; 
+
+  }
+  .image-box img{
+    width: 100%;
+    height: 250px;
+    display: block;
+
+  }
+  .image-box .custom-button{
+    position: absolute;
+    bottom: 20px; 
+    left: 10%; 
+    background-color: rgba(0, 0, 0, 0.699); 
+    color: white;
+    padding: 5px 20px;
+    border: 2px solid white;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: capitalize;
+    
+  }
+  .image-box .custom-button:hover{
+   background-color: white;
+   color: rgba(0, 0, 0, 0.884);
+   font-weight: bold;
+   
+  }
+
+  
+  .image-containers img {
+    filter: grayscale(100%);
+
+  }
+
+
+  .image-containers img:hover {
+    filter: none;
+
+  }
+  .price {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .price::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assests/dillon-kydd-pvdx8c6Y5BY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: 0%;
+    background-size: cover;
+    filter: grayscale(100%);
+    z-index: -1; 
+    padding-bottom: 5rem;
+    
+  }
+  
+  .price h5 {
+   
+    color: orangered;
+  }
+  .informations{
+    padding-bottom: 5rem;
+    padding-top: 4rem;
+  }
+  .pay {
+    margin: 0 auto;
+    margin-top: 5rem;
+    box-sizing: border-box;
+    animation: move 3s ease-in-out infinite; /* زيادة المدة هنا */
+  
+    padding: 2rem 3rem;
+    width: 60%;
+    height: 50%;
+  }
+  .pay h1{
+    font-size: 4rem;
+  }
+  .authorized-capital {
+    display: inline; /* لتظهر الكلمات على نفس السطر */
+    white-space: nowrap; /* لمنع الكلمة من الانتقال إلى سطر آخر */
+    
+  }
+
+  @keyframes move {
+
+    0%{
+      border-top: 2px solid transparent;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      border-left: 2px solid transparent;
+    }
+    25% {
+      border-top: 2px solid orangered;
+      border-right: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      border-left: 2px solid transparent;
+    }
+    50% {
+      border-top: 2px solid orangered;
+      border-right: 2px solid orangered;
+      border-bottom: 2px solid transparent;
+      border-left: 2px solid transparent;
+    }
+    75% {
+      border-top: 2px solid orangered;
+      border-right: 2px solid orangered;
+      border-bottom: 2px solid orangered;
+      border-left: 2px solid transparent;
+    }
+ 
+    100% {
+      border-top: 2px solid orangered;
+      border-right: 2px solid orangered;
+      border-bottom: 2px solid orangered;
+      border-left: 2px solid orangered;
+    }
+  }
+  .brochure{
+    background-color: transparent;
+    width: 40%;
+    color: orangered;
+    border: 3px solid white;
+  }
+  .brochure:hover{
+    background-color: white;
+  }
+  .learn-btn:focus {
+    outline: 2px solid yellow;
+    box-shadow: 0 0 5px yellow;
+  }

@@ -1,0 +1,35 @@
+
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; 
+    padding: 0;
+    
+  }
+  
+
+  .navbar-nav .nav-link {
+   
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #0a0800; 
+  }
+  
+
+  .svg-inline--fa, .bi {
+   
+    vertical-align: middle;
+  }
+  .navbar.scrolled {
+    background-color:  rgb(33, 37, 41);
+    
+  }
+  .removenav{
+    opacity: 0;
+  }
+  

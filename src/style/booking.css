@@ -1,0 +1,42 @@
+
+.register{
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .register .info{
+    position: relative;
+  }
+
+  .register .info button{
+   position: absolute;
+   right: 0;
+   top: 0;
+  }
+  .register .data{
+    margin-top: 7rem;
+    width: 55%;
+  }
+  .register .data input,select{
+    background-color: transparent;
+    border: 2.2px solid white;
+    outline: none;
+    color: white;
+   padding-left: 15px;
+  }
+  .register .data .button button{
+    background-color: transparent;
+    border: 2.2px solid white;
+    color: white;
+  }
+  .register .data input::placeholder{
+    color: white;
+    opacity: 100%;
+    padding-left: .5rem;
+  }
+  .register .data select{
+    color: white;
+    opacity: 100%;
+    padding-left: .5rem;
+  }
