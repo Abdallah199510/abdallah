@@ -6,19 +6,15 @@ import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import mapImg from "../assests/map2.jpg"
 import secmapImg from "../assests/map3.jpg"
-import logo from '../assests/om.png'
+
 
 function Home() {
 
 
   const location = useLocation();
   
-  if (location.pathname === '/booking') {
-    return null;  }
-    if (location.pathname === '/homepage') {
-      return null;  }
-      if (location.pathname === '/lead') {
-        return null;  }
+if (['/booking', '/homepage', '/lead'].includes(location.pathname)) return null;
+
     
     return ( 
 
@@ -93,35 +89,36 @@ function Home() {
 
 </section>
 
-
-<section className="map d-flex flex-row">
-
-  <div className="mapImage w-50">
+<section className="map d-flex flex-wrap flex-md-nowrap">
+  <div className="mapImage col-12 col-md-6">
     <img className="w-100" src={mapImg} alt="" />
   </div>
-  <div className="heart w-50 my-5 px-5">
-  <h1 className="fw-bold text-center text-white text-uppercase">the heart of it all</h1>
-  <hr />
-  <p className=" text-center text-white fs-5">Bloomfields enjoys a strategic location just minutes away from everywhere. The development is nestled between Cairo’s New Administrative Capital and New Cairo. The project provides direct access to the New  Capital’s fast train station and The New Capital's International Airport, and also enjoys a strategic location only 45 minutes away from Ain El Sokhna, and can be easily accessed via the city’s major Ring Roads.</p>
-  
-  <button className="button-custom mx-3 px-3 py-2 fw-bold my-3">Get Direction <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-  <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
-</svg></button>
+
+  <div className="heart col-12 col-md-6 my-4 px-4 text-center text-white">
+    <h1 className="fw-bold text-uppercase">THE HEART OF IT ALL</h1>
+    <hr />
+    <p>
+      Bloomfields enjoys a strategic location just minutes away from everywhere. The development is nestled between Cairo’s New Administrative Capital and New Cairo. The project provides direct access to the New Capital’s fast train station and The New Capital's International Airport, and also enjoys a strategic location only 45 minutes away from Ain El Sokhna, and can be easily accessed via the city’s major Ring Roads.
+    </p>
+
+    <button className="button-custom btn btn-light fw-bold w-50 d-flex justify-content-center align-items-center gap-2 mt-5">
+      Get Direction
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
+        <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+      </svg>
+    </button>
   </div>
-
-
 </section>
-<section className="secondmap d-flex flex-row">
+
+<section className="secondmap d-flex flex-wrap flex-md-nowrap">
 
   
-  <div className="heart w-50 my-5 px-5">
-  <h1 className="fw-bold text-center text-white text-uppercase">Master Plan</h1>
-  <hr />
 
-  </div>
-  <div className="mapImage w-50">
-    <img className="w-100" src={secmapImg} alt="" />
-  </div>
+  <h1 className="fw-bold text-center text-white text-uppercase heart my-5 px-5 col-12 col-md-6">Master Plan</h1>
+
+ 
+  <img className="mapImage col-12 col-md-6" src={secmapImg} alt="" />
+ 
 
 
 </section>
@@ -146,7 +143,7 @@ function Home() {
         <hr className="line " />
       <form className=" mt-5 px-5">
          
-       <div className=" px-5 d-flex gap-4 ">
+       <div className=" px-5 d-flex gap-4 form-inputs">
         <input type="phone" className=" my-2 py-2 w-100 " name="" id="" placeholder="NAME" />
         <input type="phone" className=" my-2 py-1  w-100 " name="" id="" placeholder="EMAIL ADDRESS" />
         <input type="phone" className=" my-2 py-1 w-100 " name="" id="" placeholder="MOBILE NUMBER" />
@@ -164,9 +161,9 @@ function Home() {
       <section className="hyperlinks text-white py-5">
       <hr className="text-white "/>
     
-  <div className="container d-flex justify-content-between align-items-start flex-row gap-4  ">
+  <div className="container d-flex justify-content-between align-items-start flex-row gap-4 ">
    
-    <div >
+    <div className="">
       <h3 className="mb-3">ADDRESS</h3>
       <p className="mb-2">
         Building 30, North 90 Road,<br />
@@ -175,7 +172,7 @@ function Home() {
       <h3 className="fw-bold">16099</h3>
     </div>
 
-    <div className="connects">
+    <div className="connects ">
       <h5 className="mb-3 fs-5">INFO</h5>
       <ul className="list-unstyled fw-bold">
         <li className="mb-2"><Link className=" text-decoration-none" to="/homepage">HOME</Link></li>
@@ -200,7 +197,7 @@ function Home() {
     </div>
 
    
-    <div>
+    <div className="">
       <h5 className="mb-3">NEWSLETTER</h5>
       <p>
         Join our mailing list  to receive<br /> monthly
@@ -216,7 +213,7 @@ function Home() {
    
 
 
-   <div className="linked d-flex flex-wrap">
+   <div className="linked d-flex flex-wrap ">
    <div class="center ">
          <div className="ring-container">
          <div class="ring"></div>
@@ -263,7 +260,7 @@ function Home() {
    </div>
 
   
-   <div className="omran fw-bold text-white">
+   <div className="omran fw-bold text-white ">
      <p className="mb-3">COPY RIGHT OMRAN GROUP</p>
    
    </div>

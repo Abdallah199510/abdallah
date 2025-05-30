@@ -55,3 +55,20 @@
     top: 50%;
     left: 45%;
   }
+  @media(max-width:575px){
+    .slider-container{
+      max-width: 575px;
+    }
+  .image-container {
+    flex: 0 0 50%;
+    padding: 10px;
+    text-align: center;
+    height: 150px;
+    box-sizing: border-box;
+    width: 250px;
+  }
+   .image-container svg{
+   opacity: 0
+  }
+
+  }

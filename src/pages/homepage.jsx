@@ -71,8 +71,8 @@ function Homepage() {
         </section>
       </section>
 
-      <section className="allinform d-flex flex-row">
-        <div className="informations d-flex flex-column w-50 px-5 align-items-start">
+      <section className="allinform d-flex flex-row ">
+        <div className="informations d-flex flex-column w-50 px-5 align-items-start col-12 col-md-6">
           <h3 className="">
             Since its inception in 2014, Tatweer Misr has been a vital catalyst
             for change, delivering incomparable value through exemplary projects
@@ -107,7 +107,7 @@ function Homepage() {
           </button>
         </div>
 
-        <div className="price text-center w-50 px-5">
+        <div className="price text-center w-50 px-5 col-12 col-md-6">
           <h5 className="text-center mt-5">FACTS&FIGURE</h5>
           <div className="pay text-white text-center mb-5">
             <h1 className="mb-3 fw-bold">{current.number}</h1>

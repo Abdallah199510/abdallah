@@ -91,3 +91,37 @@
 .aboutus a {
   color: white; 
 }
+
+@media(max-width:768px){
+  .basics{
+    margin-left: 5rem;
+  }
+  .summary{
+    width: 80%;
+  }
+  .btn button{
+    margin-top: 1rem;
+  }
+}
+@media(max-width:575px){
+  .basics{
+   margin-left: .8rem;
+  }
+  .basics h1{
+   margin-left: 1.8rem;
+  }
+  .summary{
+    width: 90%;
+    font-size: .8rem;
+    max-width: 600px;
+     padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-align: center;
+  
+  }
+  .btn button{
+    margin-top: 1rem;
+  }
+  
+}

@@ -159,3 +159,90 @@
     outline: 2px solid yellow;
     box-shadow: 0 0 5px yellow;
   }
+  @media (max-width: 768px) {
+    .homepage{
+      max-width: 768px;
+      width: 100%;
+      margin: 0 auto;
+      height: 70vh;
+     
+    }
+    .multiple-images{
+        max-width: 768px;
+      width: 100%;
+      margin: 0 auto;
+      height: 70vh;
+       padding-top: 1rem;
+        padding-left: 1rem;
+       padding-right: 1rem;
+    }
+     .price .pay h1, h2, h4{
+      font-size: 1.2rem;
+     }
+     .pay{
+     
+    padding: .8rem .3rem;
+    width: 75%;
+    height: 15%;
+     }
+     .price .brochure{
+      margin-top: 10rem;
+     }
+  }
+  @media(max-width:575px){
+      .homepage{
+      max-width: 575px;
+      width: 100%;
+      margin: 0 auto;
+      height: 30vh;
+      background-color: rgb(33, 37, 41) !important;
+      background-image: none;
+    }
+        .multiple-images{
+        max-width: 575px;
+      width: 100%;
+      margin: 0 auto;
+      height: 60vh;
+       padding-top: 1rem;
+        padding-left: 1rem;
+       padding-right: 1rem;
+    }
+    .image-box{
+      width: 150px;
+    }
+      .image-box img{
+    width: 100%;
+    height: 150px;
+    display: block;
+
+  }
+  .image-box .custom-button{
+  width: 60%;
+  font-size: .8rem;
+    
+  }
+  .image-box .custom-button:hover{
+   background-color: white;
+   color: rgba(0, 0, 0, 0.884);
+   font-weight: bold;
+   
+  }
+ .allinform{
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+ }
+ .informations{
+  width: 100% !important;
+ }
+ .price{
+  width: 100% !important;
+  height: 50vh;
+ }
+  .price .brochure{
+      margin-top: 2.5rem;
+     }
+
+  }

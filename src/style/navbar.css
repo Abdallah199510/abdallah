@@ -32,4 +32,71 @@
   .removenav{
     opacity: 0;
   }
+  @media(max-width:768px){
+   .navbar {
+    padding:1.3rem 9rem; /* تخفيف البادينج */
+    height: 50px; /* ارتفاع أقل للنافبار */
+    
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.3rem 0.5rem; /* تقليل المسافات بين الروابط */
+    font-size: 0.9rem; /* تقليل حجم الخط */
+  }
+  .navbar-brand img{
+    width: 10rem;
+  }
+}
+@media (max-width: 575px) {
+  nav{
+    width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center; 
   
+ 
+  }
+   .navbar.scrolled {
+    background-color:  rgb(33, 37, 41);
+    
+  }
+  .navbar-container {
+   
+    display: flex;
+    flex-direction: column;
+    padding-right:10rem;
+    max-width: 600px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+     padding-right: 3rem;
+    
+  }
+ .navbar-nav{
+
+  flex-wrap: wrap;
+  align-items: center ;
+  justify-content: center;
+   padding-right: 2rem;
+   width: 100%;
+ 
+
+ }
+  .navbar.scrolled {
+    background-color:  rgb(33, 37, 41);
+    opacity: 0;
+    
+  }
+
+ .nav-item .nav-link svg{
+  opacity: 0;
+ }
+ .lead{
+  padding-right: 1rem;
+ }
+  .navbar-brand img {
+    width: 8rem; /* تقليل حجم اللوجو */
+  }
+
+
+}

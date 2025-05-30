@@ -25,7 +25,7 @@ useEffect(()=>{
     return null;  }
 
 
-    if (location.pathname === '/lead' && scroll) {
+    if (location.pathname === '/lead' ) {
       return null; 
     }
   
@@ -36,13 +36,13 @@ useEffect(()=>{
  <nav className={`navbar  ${scroll ? "scrolled" : ""} `}>
   <div className="navbar-container container">
     <Link
-      className="navbar-brand text-primary fs-4 fw-bold text-white"
+      className="navbar-brand  text-primary fs-4 fw-bold text-white"
       to="/homepage"
     >
       <img width="250" src={img} alt="Logo" />
     </Link>
 
-    <div className="ms-auto">
+    <div className="LInks ms-auto ">
       <ul className="navbar-nav d-flex flex-row align-items-center">
         <li className="nav-item me-3">
           <Link to="/booking" className="nav-link fw-bold text-white">
@@ -67,7 +67,7 @@ useEffect(()=>{
           </Link>
         </li>
         <li className="nav-item ">
-        <Link className="text-white" to="/lead">
+        <Link className="lead text-white" to="/lead">
               <svg
                xmlns="http://www.w3.org/2000/svg"
                width="32" 

@@ -12,7 +12,7 @@
 body{
   width: 100%;
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   margin: 0;
   padding: 0;
 }
@@ -241,3 +241,180 @@ footer a svg{
   padding: 6px;
 
 }
+@media (max-width: 768px) {
+  .home {
+   padding: .2 10rem;
+   width: 768px;   
+    height: 70vh;      
+    margin: 0 auto;     
+    overflow-x: visible; 
+  }
+   .lists{
+    padding: 0 2rem;
+
+  }
+  .bloom{
+    opacity: 0;
+  }
+  .information, .gallery, .secondmap, .inquire, .hyperlinks, footer{
+    margin: 0 auto; 
+   padding: 0 9rem;
+    max-width: 768px;
+  }
+ 
+    .map{
+    margin: 0 auto; 
+    padding: 0 9rem;
+    max-width: 768px;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    
+  }
+  .heart h1{
+    font-size: .8rem;
+  }
+  .map p{
+    font-size: .6rem;
+  }
+  .inquire {
+    font-size: .4rem;
+    height: 50vh;
+    text-align: center;
+  }
+ 
+  .hyperlinks, footer{
+    padding: 0 9rem;
+    font-size: .5rem;
+
+  }
+  
+}
+@media (max-width: 575px) {
+  .home{
+    width: 100%;
+    height: 60vh;
+  }
+.information {
+  height: 70vh;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center; 
+}
+
+  .information h1{
+    font-size: 1rem;
+    
+    
+  }
+  .information p{
+    font-size: .7rem;
+   
+  }
+ 
+  .information .buttons .button-custom{
+  
+  font-size: .7rem;
+  text-align: center; 
+  white-space: nowrap; 
+  }
+ @media (max-width: 575px) {
+  .map{
+    flex-direction: column !important; 
+    max-width: 600px;
+  }
+  .secondmap{
+    flex-direction: column !important; 
+    max-width: 600px;
+  }
+
+  .mapImage, .heart {
+    width: 100% !important; 
+    padding: 1rem; 
+  }
+
+
+  .heart h1 {
+    font-size: 1.2rem;
+  }
+
+  .heart p {
+    font-size: 0.9rem;
+  }
+
+  .button-custom {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+  .gallery h1{
+    font-size: .9rem
+  }
+  .content .nav-link{
+    font-size: .8rem !important
+  }
+  .inquire{
+   height: 80vh;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center; 
+  }
+  .inquire h1{
+    font-size: .8rem;
+  }
+.inquire form .form-inputs{
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0px !important
+
+  }
+  .hyperlinks{
+  height: 80vh;
+ 
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto;
+  
+
+  }
+    .hyperlinks .container{
+      flex-direction: column;
+      flex-wrap: wrap;
+      gap: 0 !important;
+      justify-content: center;
+      align-items: center;
+      margin-top: -2rem;
+    }
+    .hyperlinks hr{
+      opacity: 0;
+    }
+    footer{
+ height: 30vh;
+ 
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto;
+  text-align: center; 
+ 
+    }
+    footer .container{
+       flex-wrap: wrap;
+       justify-content: center;
+       align-items: center;
+    }
+
+}
+
+
+}
+

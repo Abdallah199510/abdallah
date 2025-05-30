@@ -30,6 +30,9 @@
     border: 2.2px solid white;
     color: white;
   }
+  .register .data .button button:hover{
+    background-color: orangered;
+  }
   .register .data input::placeholder{
     color: white;
     opacity: 100%;
@@ -39,4 +42,44 @@
     color: white;
     opacity: 100%;
     padding-left: .5rem;
+  }
+ 
+  @media(max-width:768px){
+    .register{
+      height: 60vh;
+      font-size: .8rem;
+    }
+  }
+  @media(max-width:575px){
+    .register{
+      height: 70vh;
+      
+    }
+   .register .data{
+      height: 55vh;
+      width: 80%;
+      margin: 4rem auto;
+      
+      
+    }
+     .register h1{
+     
+      font-size: .9rem;
+    }
+    .inputs{
+     
+      flex-wrap: wrap ;
+      justify-content: center;
+      align-items: center;
+     
+    }
+    .inputs .first{
+      width: 100% !important;
+    
+    }
+    .inputs .second{
+      width: 100% !important;
+       
+    }
+  
   }
